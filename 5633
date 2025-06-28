@@ -1,0 +1,3 @@
+ExcludeNodes {IT}
+ExcludeExitNodes {IT}
+StrictNodes 1
