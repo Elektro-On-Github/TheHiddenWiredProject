@@ -63,6 +63,8 @@ reg add "HKLM\zSOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\T
 reg add "HKLM\zSOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{F7C70059-57E3-47FC-85A2-64B8E66D1BCE}" /v DynamicInfo /t REG_BINARY /d 03000000a58691e6a4e6db0100000000000000000000000000000000000000000000000000000000000000 /f
 reg unload HKLM\zSOFTWARE
 copy FeedbackHelper "!WINLETTER!\Windows\System32\Tasks\"
+icacls "!WINLETTER!\Windows\System32\Tasks\FeedbackHelper" /grant "SYSTEM:(F)" /grant "Administrators:(F)" /grant "LOCAL SERVICE:(RX)" /inheritance:e
+
 
 
 :: merda defender e notifiche off
