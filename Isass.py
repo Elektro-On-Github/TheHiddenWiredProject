@@ -4,7 +4,7 @@ import threading
 
 # CONFIG
 TOR_PROXY = ("127.0.0.1", 9050)  # Tor
-TARGET_ONION = "kbf5cuo6z3yxqakmbpixji7mcg6daycfyyniv6n5c2f2vjgbq2bz25id.onion"  
+TARGET_ONION = "your-tor-server.onion"  
 TARGET_PORT = 80  # onion port
 
 class RequestHandler(socketserver.BaseRequestHandler):
