@@ -1,6 +1,8 @@
 <pre>
 QUESTO PROGETTO É STATO CREATO SOLO A SCOPO EDUCATIVO E SPERIMENTALE, NON USARLO SU PC CHE NON SONO DI TUA PROPRIETÀ O NON FANNO PARTE DEL TUO LAB VIRTUALE!
 ANCHE SE I NOMI SCELTI SONO ULTRA STEALTH NON SIGNIFICA CHE DEVE ESSERE USATO IN MODO SBAGLIATO!
+Non mi assumo alcuna responsabilità per eventuali danni diretti, indiretti o collaterali derivanti dall’uso improprio o non autorizzato di questo strumento. L’utilizzo avviene esclusivamente sotto la piena responsabilità dell’utente.
+  
 
 
 --------------------------------------- TheHiddenWiredProject ---------------------------------------
