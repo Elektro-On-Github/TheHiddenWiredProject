@@ -135,8 +135,8 @@ root@debianVM:/var/log/apache2# cat access.log
 Prendiamo in considerazione solo la base 32, quindi questa: MNUWC33PFQQHC5LFON2G6IGDVEQHK3RA e questa: ORSXG5BBEE======
 se la decodifichiamo diventa: 
 
-stringa1: ciaoo, questo é un 
-stringa2: test!!
+"MNUWC33PFQQHC5LFON2G6IGDVEQHK3RA" = ciaoo, questo é un 
+"ORSXG5BBEE======" = test!!
 ----------------------------------------------------------------------------------------------------
 
 Invece per eseguire codice nella macchina, tramite la backdoor, basta modificare il file: /var/www/html/payloads_httpcmd/default.txt
