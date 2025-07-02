@@ -137,6 +137,7 @@ se la decodifichiamo diventa:
 
 "MNUWC33PFQQHC5LFON2G6IGDVEQHK3RA" = ciaoo, questo é un 
 "ORSXG5BBEE======" = test!!
+
 ----------------------------------------------------------------------------------------------------
 
 Invece per eseguire codice nella macchina, tramite la backdoor, basta modificare il file: /var/www/html/payloads_httpcmd/default.txt
