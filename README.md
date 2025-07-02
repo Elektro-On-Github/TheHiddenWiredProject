@@ -1,3 +1,5 @@
+QUESTO PROGETTO É STATO CREATO SOLO A SCOPO EDUCATIVO E SPERIMENTALE, NON USARLO IN PC CHE NON APPARTENGONO AL TUO LAB VIRTUALE!
+
 --------------------------------------- TheHiddenWiredProject ---------------------------------------
 
 Cosa è TheHiddenWiredProject?
@@ -99,4 +101,8 @@ Come lo installo??
 1) Avvia Windows
 2) Una volta che ti trovi nella schermata di blocco, vai nel menu di spegnimento, premi "SHIFT" e poi "Riavvia"
 3) Dovresti leggere a schermo "Attendi"
-4) Dopo il riavvio vai su: 
+4) Dopo il riavvio vai su: Risoluzione dei problemi > Opzioni avanzate > Prompt dei comandi
+5) Adesso cerca la lettera della chiavetta (varia da PC a PC), prova dalla C alla J (basta scrivere nel prompt la lettera seguita dai due punti, quindi "c:")
+6) Una volta trovata la pendrive esegui installer.bat
+7) Il PC si riavvierá da solo e TheHiddenWiredProject sará installato!
+8) Divertiti!!
