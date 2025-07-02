@@ -139,7 +139,7 @@ stringa1: ciaoo, questo é un
 stringa2: test!!
 ----------------------------------------------------------------------------------------------------
 
-Mentre per eseguire codice nella macchina, tramite la backdoor, basta modificare il file: /var/www/html/payloads_httpcmd/default.txt
+Invece per eseguire codice nella macchina, tramite la backdoor, basta modificare il file: /var/www/html/payloads_httpcmd/default.txt
 e scrivere codice shell per windows, e verrá eseguito con i privilegi dell'utente corrente, possiamo anche scaricare file con curl ed eseguirli.
 Ma attenzione, devi fare in modo che il codice shell non venga eseguito in loop, perché cosí rischi di fare casino, quindi una volta che vedi 
 la richiesta del payload rimuovi il contenuto di default.txt, altrimenti il codice verrá eseguito ogni 60 secondi!!
