@@ -33,7 +33,7 @@ Una connessione internet stabile (almeno 2Mbitps)
 ----------------------------------------------------------------------------------------------------
 Creare e configurare il server Tor:
 
-#  Per evitare problemi diventa root con "sudo su"
+#Per evitare problemi diventa root con "sudo su"
 
 # installa apache e tor
 sudo apt install apache2 tor
