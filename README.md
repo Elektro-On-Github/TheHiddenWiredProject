@@ -1,4 +1,4 @@
-QUESTO PROGETTO É STATO CREATO SOLO A SCOPO EDUCATIVO E SPERIMENTALE, NON USARLO IN PC CHE NON APPARTENGONO AL TUO LAB VIRTUALE!
+QUESTO PROGETTO É STATO CREATO SOLO A SCOPO EDUCATIVO E SPERIMENTALE, NON USARLO SU PC CHE NON SONO DI TUA PROPRIETÀ O NON FANNO PARTE DEL TUO LAB VIRTUALE!!
 ANCHE SE I NOMI SCELTI SONO ULTRA STEALTH NON SIGNIFICA CHE DEVE ESSERE USATO IN MODO SBAGLIATO!
 
 --------------------------------------- TheHiddenWiredProject ---------------------------------------
@@ -7,17 +7,17 @@ Cosa è TheHiddenWiredProject?
 TheHiddenWiredProject (THWP) è un keylogger con backdoor integrata pensato per essere ultra stealth
 perchè tutto il traffico generato è instradato via Tor!
 
-è safe?
+È sicuro?
 Yeah bro, è 100% safe, il codice lo puoi modificare come vuoi senza problemi, mentre Tor ti aiuta
 a nascondere il tuo server (serve per ascoltare il keylogger e usare la backdoor).
 
-quindi devo configurare un server!?
+Quindi devo configurare un server!?
 Yeah, è necessario per avere un livello di anonimato abbastanza alto
 
-è pronto all'uso?
-assolutamente no, lo devi compilare tu, è ultra facile, continua a leggere che dopo lo spiego
+É pronto all'uso?
+Assolutamente no, lo devi compilare tu, è ultra facile, continua a leggere che dopo lo spiego
 
-lo consigli?
+Lo consigli?
 Assolutamente si! Questo tool è estremamente compatto, ma nello stesso tempo ultra stealth,
 non troveresti mai un keylogger con una backdoor via Tor su internet!!
 
@@ -85,7 +85,7 @@ e metti il tuo dominio (quello che finisce per .onion che hai trovato dentro il 
 
 Adesso hai tutto pronto!! Puoi testare su una VM Windows il funzionamento, se tutto funziona puoi compilare tutto!!
 
-Per compilare tutto é necessaria una macchina Windows, useremo nuitka per trasformare i notri file in python in eseguibili.
+Per compilare tutto é necessaria una macchina Windows, useremo nuitka per trasformare i nostri file in python in eseguibili.
 
 1) Installa Python nella macchina Windows (Non da MStore ma dal sito ufficiale)
 2) Adesso apri il terminale e digita: pip install nuitka (SE PIP NON VIENE TROVATO RIAVVIA WINDOWS DOPO AVER INSTALLATO PYTHON!)
