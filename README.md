@@ -2,6 +2,7 @@
 QUESTO PROGETTO É STATO CREATO SOLO A SCOPO EDUCATIVO E SPERIMENTALE, NON USARLO SU PC CHE NON SONO DI TUA PROPRIETÀ O NON FANNO PARTE DEL TUO LAB VIRTUALE!
 ANCHE SE I NOMI SCELTI SONO ULTRA STEALTH NON SIGNIFICA CHE DEVE ESSERE USATO IN MODO SBAGLIATO!
 
+
 --------------------------------------- TheHiddenWiredProject ---------------------------------------
 
 Cosa è TheHiddenWiredProject?
@@ -21,6 +22,14 @@ Assolutamente no, lo devi compilare tu, è ultra facile, continua a leggere che 
 Lo consigli?
 Assolutamente si! Questo tool è estremamente compatto, ma nello stesso tempo ultra stealth,
 non troveresti mai un keylogger con una backdoor via Tor su internet!
+
+------------ The Brains Behind THWP ------------
+Isass.py ---> Tor Proxy
+SecurityHealthSystray.bat ---> Avvia proxy, Brain e Tor
+WMIHost.py ---> THWP (Brain)
+wuasrv.exe ---> Tor.exe (Scaricato dal sito ufficiale, ma rinominato)
+wuasrvs.py ---> Avvio di Tor ritardato per evitare errori
+installer.bat ---> Installatore da WindowsPE
 
 ----------------------------------------------------------------------------------------------------
 
