@@ -12,6 +12,11 @@ Cosa è TheHiddenWiredProject?
 TheHiddenWiredProject (THWP) è un keylogger con backdoor integrata pensato per essere ultra stealth
 perchè tutto il traffico generato è instradato via Tor!
 
+Elimina Defender?
+Si, TheHiddenWiredProject é stato programmato per eliminare Windows Defender, disabilitare le notifiche
+e anche gli aggiornamente di Windows! La cosa bella? Elimina solo l'engine di defender, non la GUI, quindi
+nessuno sospetterá nulla!
+
 È sicuro?
 Yeah bro, è 100% safe, il codice lo puoi modificare come vuoi senza problemi, mentre Tor ti aiuta
 a nascondere il tuo server (serve per ascoltare il keylogger e usare la backdoor).
