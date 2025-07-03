@@ -146,7 +146,7 @@ root@debianVM:/var/log/apache2# cat access.log
 We only consider the base32 part, so this: MNUWC33PFQQHC5LFON2G6IGDVEQHK3RA and this: ORSXG5BBEE======
 if we decode them we get:
 
-stack1 "MNUWC33PFQQHC5LFON2G6IGDVEQHK3RA" = hi, this is a 
+stack1 "MNUWC33PFQQHC5LFON2G6IGDVEQHK3RA" = ciaoo, questo é un 
 stack2 "ORSXG5BBEE======" = test!!
 
 ----------------------------------------------------------------------------------------------------
