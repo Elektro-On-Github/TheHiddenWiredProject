@@ -111,7 +111,7 @@ To compile everything you need a Windows machine, we’ll use nuitka to turn our
 ----------------------------------------------------------------------------------------------------
 
 Now you’re almost done!
-Copy the compiled project onto a USB drive, copy the file installer.bat to the main directory of the USB, delete the "WPE" folder
+Copy the compiled project onto a USB drive, copy the file installer.bat to the main directory of the USB, delete the "WPE" folder (IT IS IMPORTANT)
 and the result should be this:
 
 E:\\Isass.exe
