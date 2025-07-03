@@ -112,7 +112,7 @@ Per compilare tutto é necessaria una macchina Windows, useremo nuitka per trasf
 ----------------------------------------------------------------------------------------------------
 
 Adesso hai quasi finito!
-Copia il progetto compilato dentro una pendrive, copia il file installer.bat nella directory principale della chiavetta, rimuovi la cartella "WPE" 
+Copia il progetto compilato dentro una pendrive, copia il file installer.bat nella directory principale della chiavetta, rimuovi la cartella "WPE" (É fondamentale)
 e il risultato dovrebbe essere questo:
 
 E:\Isass.exe
