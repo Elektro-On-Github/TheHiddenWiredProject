@@ -38,11 +38,6 @@ Its goal is to study how keylogging, persistent backdoors, and anonymized comman
 
 ---
 
-## ✔️ You need some help? 
-Watch [this ultra fast guide](https://youtu.be/) - 5 minutes of pure walkthrough, just what you need, no bullshit, only powerful and punchy brainstream
-
----
-
 ## 🧠 Project Architecture
 
 | File                          | Description                                                               |
