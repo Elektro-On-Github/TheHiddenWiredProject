@@ -1,4 +1,4 @@
-<pre>
+<pre style="white-space: pre-wrap;">
 THIS PROJECT WAS CREATED FOR EDUCATIONAL AND EXPERIMENTAL PURPOSES ONLY. DO NOT USE IT ON MACHINES THAT ARE NOT YOUR OWN OR THAT ARE NOT PART OF YOUR VIRTUAL LAB!
 EVEN IF THE CHOSEN NAMES ARE ULTRA STEALTH, THAT DOES NOT MEAN IT SHOULD BE USED IMPROPERLY!
 I take no responsibility for any direct, indirect, or collateral damage resulting from improper or unauthorized use of this tool. Use is entirely under the user's own responsibility.
